@@ -38,6 +38,10 @@ class Test_Session(unittest.TestCase):
         assert 'https' == session.protocol
         assert 'my.sub.domain.tld' == session.host
         assert session.port == 9200
+        session = Session.from_string('https://my.sub.domain-with-port.tld:9201')
+        assert 'https' == session.protocol
+        assert 'my.sub.domain-with-port.tld' == session.host
+        assert session.port == 9201
 
         session = Session.from_string('     http://striped-domain.tld  ')
         assert 'http' == session.protocol

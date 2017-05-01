@@ -48,4 +48,7 @@ class Session(object):
         if m is None:
             raise SessionException("string does not match a session")
         else:
-            return cls(m.group('protocol'), m.group('host'), m.group('port'))
+            port = None
+            if m.group('port'):
+                port = int(m.group('port'))
+            return cls(m.group('protocol'), m.group('host'), port)
