@@ -2,5 +2,5 @@
 estoolkit
 #########
 
-``estoolkit`` is an interactive elasticsearch comand line.
+``estoolkit`` is an interactive elasticsearch command line.
 
