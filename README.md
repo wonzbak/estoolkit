@@ -1,2 +1,0 @@
-# estoolkit
-Elasticsearch cli toolkit
