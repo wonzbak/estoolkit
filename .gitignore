@@ -16,7 +16,7 @@ downloads/
 eggs/
 .eggs/
 lib/
-lib64/
+lib64
 parts/
 sdist/
 var/
@@ -81,9 +81,15 @@ celerybeat-schedule
 # virtualenv
 venv/
 ENV/
+bin/
+share
 
 # Spyder project settings
 .spyderproject
 
 # Rope project settings
 .ropeproject
+
+# sublime-projest
+*.sublime-workspace
+*.sublime-project
