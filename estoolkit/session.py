@@ -52,3 +52,8 @@ class Session(object):
             if m.group('port'):
                 port = int(m.group('port'))
             return cls(m.group('protocol'), m.group('host'), port)
+
+    def __str__(self):
+        """
+        """
+        return "{}://{}:{}".format(self.protocol, self.host, self.port)

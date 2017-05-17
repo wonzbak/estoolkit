@@ -1,0 +1,91 @@
+{
+    "command": {
+        "name": "_cat",
+        "query_params": [
+            {
+                "name": "v",
+                "description": "verbose mode",
+                "values": null
+            },
+            {
+                "name":"help",
+                "description": "help",
+                "values": null
+            },
+            {
+                "name": "h",
+                "description": "headers columns",
+                "values": null
+            },
+            {
+                "name": "format",
+                "description": "output format",
+                "values": ["text", "json", "smile", "yaml", "cbor"]
+            },
+            {
+                "name": "pretty",
+                "description": "pretty print",
+                "values": null
+            },
+            {
+                "name": "s",
+                "description": "sort columns",
+                "values": {"column_order": null}
+            }
+        ],
+        "sub_commands": [
+            {
+                "name": "aliases",
+                "description": "show information about aliases"
+            },
+            {
+                "name": "allocation",
+                "description": "show snapshots of shard allocated per node"
+            },
+            {
+                "name": "count",
+                "description": "count all documents in cluster",
+                "extra": {"indices_list": null}
+            },
+            {
+                "name": "fielddata",
+                "description": "show heap memory usage",
+                "query_params": [
+                    {
+                    "name": "fields",
+                    "description": "filter result on fields"
+                    }
+                ],
+                "extra": {"fields_list": null}
+            },
+            {
+                "name": "health",
+                "description": "show cluster's health",
+                "query_params": [
+                    {
+                        "name": "ts",
+                        "description": "disable timestamp if false",
+                        "values": ["true", "false"]
+                    }
+                ]
+            },
+            {
+                "name": "indices",
+                "description": "show information of each index",
+                "query_params": [
+                    {
+                       "todo": "list of columns?"
+                    }
+                ]
+            },
+            {
+                "name": "master",
+                "description": "show master's node ID"
+            },
+            {
+                "name": "nodeattrs",
+                "description": "show custom node attibutes"
+            }
+        ]
+    }
+}

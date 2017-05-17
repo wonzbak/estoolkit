@@ -1,0 +1,37 @@
+{
+    "verbs": [
+        {
+            "name": "GET",
+            "commands": [
+                {
+                    "name": "_cat",
+                    "resource": "cmd_cat.json"
+                },
+                {
+                    "name": "_search",
+                    "resource": "cmd_cat.json"
+                }
+            ]
+        },
+        {
+            "name": "PUT",
+            "commands": [
+            ]
+        },
+        {
+            "name": "POST",
+            "commands": [
+            ]
+        },
+        {
+            "name": "DELETE",
+            "commands": [
+            ]
+        },
+        {
+            "name": "HEAD",
+            "commands": [
+            ]
+        }
+    ]
+}
